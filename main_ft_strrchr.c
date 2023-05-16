@@ -1,29 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   main_ft_strchr.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dkurcbar <dkurcbar@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/05/15 16:04:17 by dkurcbar          #+#    #+#             */
-/*   Updated: 2023/05/16 10:34:24 by dkurcbar         ###   ########.fr       */
+/*   Created: 2023/05/15 16:25:54 by dkurcbar          #+#    #+#             */
+/*   Updated: 2023/05/16 10:30:09 by dkurcbar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-char	*ft_strchr(const char *s, int c)
+#include<stdio.h>
+#include<string.h>
+#include<unistd.h>
+int main(int args, char **argv)
 {
-	int	i;
-
-	i = 0;
-	if (c == '\0')
-		return ((char *) &s[ft_strlen(s)]);
-	while (s[i] || s[i] == c % 256)
-	{
-		if (c % 256 == s[i])
-			return ((char *) &s[i]);
-		i++;
-	}
-	return (NULL);
+	printf("para la cadena '%s'\nla funcion original devuelve la direccion '%p'\ndonde esta la cadena: '%s'\ny mi funcion, devuelve la direccion '%p'\ndonde esta la cadena '%s'\n",
+		   	argv[1], strrchr(argv[1],argv[2][0]), strrchr(argv[1],argv[2][0]), 
+			ft_strrchr(argv[1],argv[2][0]), ft_strrchr(argv[1],argv[2][0]));
+	return (0);
 }
