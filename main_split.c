@@ -1,24 +1,44 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_calloc.c                                        :+:      :+:    :+:   */
+/*   main_split.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dkurcbar <dkurcbar@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/05/24 15:37:08 by dkurcbar          #+#    #+#             */
-/*   Updated: 2023/05/29 13:45:58 by dkurcbar         ###   ########.fr       */
+/*   Created: 2023/05/26 15:25:42 by dkurcbar          #+#    #+#             */
+/*   Updated: 2023/05/29 17:28:36 by dkurcbar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_calloc(size_t count, size_t size)
+int main(int args, char **argv)
 {
-	void	*array;	
+	char *s = argv[1];
+	char c = argv[2][0];
+	char **split;
+	int i;
 
-	array = malloc(count * size);
-	if (array == NULL)
-		return (NULL);
-	ft_bzero(array, count * size);
-	return (array);
+	split = ft_split(s,c);
+	i = 0;
+	while (i < 1)
+	{
+		printf("la palabra %d es: '%s'\n", i, split[i]);
+	i++;
+	}
+	printf("la palabra %d es %p\n", i, split[i]);
+	free (split);
+
+	split = ft_split("           ", ' ');
+	i = 0;
+	while (split[i])
+	{
+		printf("la palabra %d es: '%s'\n", i, split[i]);
+	i++;
+	}
+	free (split);
+
+	return (0);
 }
+
+

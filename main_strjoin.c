@@ -1,23 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   main_strjoin.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dkurcbar <dkurcbar@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/05/03 13:22:34 by dkurcbar          #+#    #+#             */
-/*   Updated: 2023/05/26 13:59:40 by dkurcbar         ###   ########.fr       */
+/*   Created: 2023/05/25 12:56:12 by dkurcbar          #+#    #+#             */
+/*   Updated: 2023/05/25 16:13:36 by dkurcbar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include<stdlib.h>
+#include "libft.h"
+#include <stdio.h>
 
-size_t	ft_strlen(const char *str)
+int main(int args, char **argv)
 {
-	int	i;
+	char 			*s1 = argv[1];
+	char			*s2 = argv[2];
+	char			*rtn;
 
-	i = 0;
-	while (str[i])
-		i++;
-	return (i);
+	rtn = ft_strjoin(s1, s2);
+	printf("la cadena: '%s' + la cadena '%s'\n", s1, s2);
+	printf("devuelve la cadena: '%s'\n", rtn);
+	free(rtn);
+	return (0);
 }
+
+
