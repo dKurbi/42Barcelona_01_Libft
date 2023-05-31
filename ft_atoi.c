@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-int	initnum(const char *str, int *sign, int *number)
+static int	initnum(const char *str, int *sign, int *number)
 {
 	int	i;
 

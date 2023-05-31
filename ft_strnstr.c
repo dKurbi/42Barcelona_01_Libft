@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-void	init_var(size_t *l, char *str, char *c, size_t *i)
+static void	init_var(size_t *l, char *str, char *c, size_t *i)
 {
 	l[0] = ft_strlen(str);
 	l[1] = ft_strlen(c);
