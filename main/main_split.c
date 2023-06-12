@@ -6,12 +6,22 @@
 /*   By: dkurcbar <dkurcbar@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/26 15:25:42 by dkurcbar          #+#    #+#             */
-/*   Updated: 2023/05/29 17:28:36 by dkurcbar         ###   ########.fr       */
+/*   Updated: 2023/06/12 14:02:30 by dkurcbar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+void manual(int cas)
+{
+	switch (cas){
+		case 1:
+			printf("El main del split recibe una cadena de caracteres como argumentos,\n");
+			printf("seguido por el caracter separador\n");
+			printf("./split \"cadena a separar\" \" \"\n");
+	}
+}	
+			
 int main(int args, char **argv)
 {
 	char *s = argv[1];
@@ -19,17 +29,12 @@ int main(int args, char **argv)
 	char **split;
 	int i;
 
-	split = ft_split(s,c);
-	i = 0;
-	while (i < 1)
+	if (args == 1)
 	{
-		printf("la palabra %d es: '%s'\n", i, split[i]);
-	i++;
+		manual(1);
+		return (0);
 	}
-	printf("la palabra %d es %p\n", i, split[i]);
-	free (split);
-
-	split = ft_split("           ", ' ');
+	split = ft_split(s,c);
 	i = 0;
 	while (split[i])
 	{
