@@ -1,5 +1,5 @@
 # 42Barcelona_01_Libft
-The aim of this project is to code a C library regrouping usual functions that i’ll be allowed to use in all your other projects in the school.
+The aim of this project is to code a C library regrouping usual functions  that will be available for use in all the future school projects."
 
 ## In this project, the following functions have been recode.
 
