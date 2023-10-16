@@ -27,7 +27,7 @@ The aim of this project is to code a C library regrouping usual functions  that 
 #### • calloc
 #### • strdup
 
-## And the following ones have been added
+## And the following functions have been added
 
 ### • ft_substr
 **Prototype:** 
