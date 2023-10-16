@@ -88,12 +88,16 @@ _
 **Description:** 
 >_Outputs the string ’s’ to the given file descriptor followed by a newline._
 
-### • ft_putnbr_fd:
+### • ft_putnbr_fd:(/ft_putnbr_fc.c)
 **Prototype:** 
 >_void ft_putnbr_fd(int n, int fd);_
 
 **Description:** 
 >_Outputs the integer ’n’ to the given file descriptor._
+
+## Bonus part
+
+
 
 
 
