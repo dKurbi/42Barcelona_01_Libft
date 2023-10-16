@@ -3,18 +3,29 @@ The aim of this project is to code a C library regrouping usual functions that i
 
 ## In this project, the following functions have been recode.
 
-• isalpha        • isdigit
-• isalnum        • isascii
-• isprint        • strlen
-• memset         • bzero
-• memcpy         • memmove
-• strlcpy        • strlcat
-• toupper        • tolower
-• strchr         • strrchr
-• strncmp        • memchr
-• memcmp         • strnstr
-• atoi           • calloc
-• strdup
+#### • isalpha
+#### • isdigit
+#### • isalnum        
+#### • isascii
+#### • isprint
+#### • strlen
+#### • memset
+#### • bzero
+#### • memcpy         
+#### • memmove
+#### • strlcpy        
+#### • strlcat
+#### • toupper        
+#### • tolower
+#### • strchr         
+#### • strrchr
+#### • strncmp        
+#### • memchr
+#### • memcmp   
+#### • strnstr
+#### • atoi
+#### • calloc
+#### • strdup
 
 ## And the following ones have been added
 
