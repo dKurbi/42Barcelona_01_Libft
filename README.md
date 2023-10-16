@@ -55,8 +55,10 @@ _
 
 ### • ft_strmapi: 
 **Prototype:** 
-_char *ft_strmapi(char const *s, char (*f)(unsigned int, char));_
-Description:  Applies the function ’f’ to each character of the string ’s’, and passing its index as first argument to create a new string (with malloc) resulting from successive applications of ’f’.
+>_char *ft_strmapi(char const *s, char (*f)(unsigned int, char));_
+
+**Description:**  
+>_Applies the function ’f’ to each character of the string ’s’, and passing its index as first argument to create a new string (with malloc) resulting from successive applications of ’f’._
 
 ### • ft_striteri:
 **Prototype:** 
