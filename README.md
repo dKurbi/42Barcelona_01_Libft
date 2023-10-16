@@ -97,28 +97,60 @@ _
 
 ## Bonus part
 
-### + ft_lstnew:
+### • ft_lstnew:
 **Prototype:** 
 >_t_list *ft_lstnew(void *content);_
 
 **Description:**
 > _Allocates (with malloc) and returns a new node. The member variable ’content’ is initialized with the value of the parameter ’content’. The variable ’next’ is initialized to NULL._
 
-### + ft_lstadd_front:
+### • ft_lstadd_front:
 **Prototype:** 
 > _void ft_lstadd_front(t_list **lst, t_list *new);_
 
 **Description:**
 >_Adds the node ’new’ at the beginning of the list._
 
-## + ft_lstsize:
+## • ft_lstsize:
 **Prototype:** 
 >_int ft_lstsize(t_list *lst);_
 
 **Description:** 
 >_Counts the number of nodes in a list._
 
+## • ft_lstadd_back:
+**Prototype:** 
+>_void ft_lstadd_back(t_list **lst, t_list *new);_
 
+**Description** 
+>_Adds the node ’new’ at the end of the list._
 
+## • ft_lstdelone:
+**Prototype:**
+>_void ft_lstdelone(t_list *lst, void (*del)(void*));_
+
+**Description:** 
+>_Takes as a parameter a node and frees the memory of the node’s content using the function ’del’ given as a parameter and free the node. The memory of ’next’ must not be freed._
+
+## • ft_lstclear:
+**Prototype:**
+>_void ft_lstclear(t_list **lst, void (del)(void));_
+
+**Description:**
+_Deletes and frees the given node and every successor of that node, using the function 'del' and free. Finally, the pointer to the list must be set to NULL._
+
+## • ft_lstiter:
+**Prototype:**
+>_void ft_lstiter(t_list *lst, void (f)(void));_
+
+**Description:**
+>_Iterates the list 'lst' and applies the function 'f' on the content of each node._
+
+## • ft_lstmap:
+**Prototype:**
+>_t_list *ft_lstmap(t_list *lst, void *(f)(void), void (del)(void));_
+
+**Description:**
+_Iterates the list 'lst' and applies the function 'f' on the content of each node. Creates a new list resulting from the successive applications of the function 'f'. The 'del' function is used to delete the content of a node if needed._
 
 
