@@ -81,14 +81,14 @@ _
 **Description:** 
 >_Outputs the string ’s’ to the given file descriptor._
 
-### • ft_putendl_fd:_
+### • ft_putendl_fd:
 **Prototype:** 
 >_void ft_putendl_fd(char *s, int fd);_
 
 **Description:** 
 >_Outputs the string ’s’ to the given file descriptor followed by a newline._
 
-### • ft_putnbr_fd:(/ft_putnbr_fc.c)
+### • ft_putnbr_fd:
 **Prototype:** 
 >_void ft_putnbr_fd(int n, int fd);_
 
@@ -97,11 +97,26 @@ _
 
 ## Bonus part
 
+### + ft_lstnew:
+**Prototype:** 
+>_t_list *ft_lstnew(void *content);_
 
+**Description:**
+> _Allocates (with malloc) and returns a new node. The member variable ’content’ is initialized with the value of the parameter ’content’. The variable ’next’ is initialized to NULL._
 
+### + ft_lstadd_front:
+**Prototype:** 
+> _void ft_lstadd_front(t_list **lst, t_list *new);_
 
+**Description:**
+>_Adds the node ’new’ at the beginning of the list._
 
+## + ft_lstsize:
+**Prototype:** 
+>_int ft_lstsize(t_list *lst);_
 
+**Description:** 
+>_Counts the number of nodes in a list._
 
 
 
