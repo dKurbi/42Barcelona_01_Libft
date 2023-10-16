@@ -3,7 +3,7 @@ The aim of this project is to code a C library regrouping usual functions  that 
 
 ## In this project, the following functions have been recode.
 
-#### • isalpha
+#### • isalpha (/ft_isalpha.c)
 #### • isdigit
 #### • isalnum        
 #### • isascii
